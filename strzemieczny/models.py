@@ -6,4 +6,4 @@ class myProjects(models.Model):
     url=models.CharField(max_length=30, unique=True)
     description=models.CharField(max_length=100)
     inDev=models.BooleanField()
-    image=models.ImageField()
+    image=models.ImageField(upload_to='strzemieczny/myProjects/')
